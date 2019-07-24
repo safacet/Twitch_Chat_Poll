@@ -12,8 +12,13 @@ class IRCclient(Thread):
         server = "irc.chat.twitch.tv" # Server
         port = 6667
         self.ircsock.connect((server, port))
+<<<<<<< HEAD
         self.send("PASS Your_Oauth_Password")
         self.send("NICK Your_Twitch_Nick")
+=======
+        self.send("PASS Yout_Oauth_Password")
+        self.send("NICK Your_Nick")
+>>>>>>> d09acb23fa02ddb4e438d6a6116ed86a72ef602f
         self.connect(channel)
         
         
